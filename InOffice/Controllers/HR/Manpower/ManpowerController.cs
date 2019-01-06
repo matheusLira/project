@@ -4,12 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace InOffice.Content
+namespace InOffice.Controllers.HR.Manpower
 {
-    public class JobDescriptionController : Controller
+    public class ManpowerController : Controller
     {
-        // GET: JobDescription
-        public ActionResult JobDescription()
+        // GET: Manpower
+        public ActionResult Index()
         {
             return View();
         }

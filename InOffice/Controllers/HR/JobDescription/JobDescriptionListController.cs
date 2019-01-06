@@ -9,7 +9,7 @@ namespace InOffice.Controllers.HR.JobDescription
     public class JobDescriptionListController : Controller
     {
         // GET: JobDescriptionList
-        public ActionResult Index()
+        public ActionResult JobDescriptionList()
         {
             return View();
         }

@@ -199,6 +199,8 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HR\JobDescription\JobDescriptionListController.cs" />
+    <Compile Include="Controllers\HR\Manpower\ManpowerController.cs" />
+    <Compile Include="Controllers\HR\Manpower\ManpowerListController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -272,11 +274,15 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Modules\HR\JobDescription\JobDescriptionView.cshtml" />
     <Content Include="Views\Modules\HR\JobDescription\JobDescriptionList.cshtml" />
+    <Content Include="Views\Modules\HR\Manpower\Manpower.cshtml" />
+    <Content Include="Views\Modules\HR\Manpower\ManpowerList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\JobDescriptionList\" />
     <Folder Include="Views\JobDescription\" />
+    <Folder Include="Views\ManpowerList\" />
+    <Folder Include="Views\Manpower\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

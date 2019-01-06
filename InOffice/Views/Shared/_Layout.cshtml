@@ -4,7 +4,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -12,7 +12,7 @@
 <body>
     <div class="display-table">
         <div class="row display-table-row">
-            <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
+            <div class="col-md-2 col-sm-2" id="navigation">
                 <div class="logo">
                     <span>O logo aqui</span>
                 </div>
@@ -20,13 +20,12 @@
                     <ul>
                         <li>@Html.ActionLink("Dashboard", "Index", "Home")</li>
                         <li>@Html.ActionLink("Job description", "About", "Home")</li>
+                        <li>@Html.ActionLink("Manpower", "Contact", "Home")</li>
                         <li>@Html.ActionLink("Setup", "Contact", "Home")</li>
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-11 display-table-cell v-align">
-                <!--<button type="button" class="slide-toggle">Slide Toggle</button> -->
-                <div class="row">
+            <div class="col-sm-10 no-space">
                     <header>
                         <div class="col-md-7">
                             <nav class="navbar-default pull-left">
@@ -40,22 +39,15 @@
                                 </div>
                             </nav>
                             <div class="search hidden-xs hidden-sm">
-                                <h3>Window title goes here</h3>
+                                <h3>@ViewBag.Title</h3>
                             </div>
                         </div>
                         <div class="col-md-5">
                             <div class="header-rightside">
                                 <ul class="list-inline header-top pull-right">
-                                    
-                                    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                                    <li>
-                                        <a href="#" class="icon-info">
-                                            <i class="fa fa-bell" aria-hidden="true"></i>
-                                            <span class="label label-primary">3</span>
-                                        </a>
-                                    </li>
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="http://jskrishna.com/work/merkury/images/user-pic.jpg" alt="user">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span>Matheus Lira</span>
                                             <b class="caret"></b></a>
                                         <ul class="dropdown-menu">
                                             <li>
@@ -75,7 +67,6 @@
                             </div>
                         </div>
                     </header>
-                </div>
                 <div class="user-interaction">
                     @RenderBody()
                 </div>

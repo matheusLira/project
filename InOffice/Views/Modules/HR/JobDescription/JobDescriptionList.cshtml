@@ -1,7 +1,47 @@
 ﻿
 @{
     ViewBag.Title = "JobDescriptionList";
+    //ViewBag.Name - "Job description list";
 }
 
-<h2>JobDescriptionList</h2>
+<section class="main-content">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="pull-left">
+                <button class="add-button">+</button>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="pull-right">
+                <input class="input-text" type="text" placeholder="Type to search" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="list-table">
+    <div class="table-head">
+        <span class="table-head-title">Id</span>
+        <span class="table-head-title">Job title</span>
+        <span class="table-head-title">Global job classification</span>
+        <span class="table-head-title">Functional area</span>
+        <span class="table-head-title">Actions</span>
+    </div>
+    <div class="table-body">
+        <table class="table-list-items">
+            <tbody>
+                <tr class="table-item">
+                    <td>1</td>
+                    <td>Analista de Suporte PL</td>
+                    <td>Analista de Suporte PL</td>
+                    <td>Suporte</td>
+                    <td>
+                        <button>E</button>
+                        <button>R</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
 

@@ -12,6 +12,17 @@
     font-weight: bold;
 }
 
+.logo-field{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lg-logo{
+    height: 60px;
+}
+
 #navigation {
     background: #2e2e2e;
     padding: 0;
@@ -29,7 +40,15 @@
     border-radius: 5px;
 }
 
+.header{
+    height: 9vh;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
 .user-interaction{
+    height: 90vh;
     overflow-y: auto;
     background-color: #ebebeb;
     padding: 10px;
@@ -366,7 +385,7 @@ li,ul{
 
 .header-top .dropdown-menu {
     border: medium none;
-    left: -110px;
+    left: -120px;
     padding: 17px;
 }
 

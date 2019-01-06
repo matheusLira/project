@@ -1,13 +1,44 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="main-content">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="pull-left">
+                <button class="add-button">+</button>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="pull-right">
+                <input class="input-text" type="text" placeholder="Type to search"/>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div>
-    <label>teste</label>
+<div class="list-table">
+
+    <div class="table-head">
+        <span class="table-head-title">Id</span>
+        <span class="table-head-title">Job title</span>
+        <span class="table-head-title">Global job classification</span>
+        <span class="table-head-title">Functional area</span>
+        <span class="table-head-title">Actions</span>
+    </div>
+    <div class="table-body">
+        <table class="table-list-items">
+            <tbody>
+                <tr class="table-item">
+                    <td>1</td>
+                    <td>Analista de Suporte PL</td>
+                    <td>Analista de Suporte PL</td>
+                    <td>Suporte</td>
+                    <td>
+                        <button>E</button>
+                        <button>R</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
